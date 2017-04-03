@@ -1,0 +1,49 @@
+version 2.2 2015-06-22
+begin in earnest
+single-musicians page
+	remove side bar
+	remove many container layers
+	change layout
+	
+2.3 2015-07-18 
+update header photo
+begin work on single musician pages
+update screenshot.png
+
+2.4 2015-07-19
+fixed contact form width for ipad landscape
+add buy now buttons to listen page
+
+2.5 2015-07-20
+install mobile menu
+
+2.6 2015-08-06
+update gcal with wrap:normal for titles
+add if statement to quote function to not show quotation marks on home page.
+made site live.
+add if statmement to page.php if the page is gallery then display content, else get content stripped
+added elseif to sidebar.php to not echo gallery on sidebar if on gallery page
+added css to center gallery page and remove sidebar 
+added google anayltics code to footer
+added google webmaster tools code
+
+
+2.7 2015-08-07
+added styling to gallery page
+reduce font size for h2 for single musician
+all musician page change genre menu li to inline-block with min-height
+
+2.8 2015-08-11
+add simple fields plugin to be used on homepage
+
+2.9 2015-08-25-28
+add mailchimp form
+change header image for smaller kb size
+
+2.9.1. 2015-08-28
+added favicons to root directory
+fiddled with w3 total cache - minify not working
+changed font removed blackjack and put in google font Marck Script
+
+2.9.2 2015-11-03
+fix background on mobile to be white

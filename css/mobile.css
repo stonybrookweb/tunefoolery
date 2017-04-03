@@ -1,0 +1,146 @@
+@import "mobile-menu.css";
+
+#access {
+	display: none;	
+}
+#ft {
+	display: none;
+}
+
+#mobile-footer {
+	display: block;	
+	width: 100%;
+	background-color: black;
+	padding-top: 20px;
+	clear: both;
+	
+}
+
+
+#mobile_phone, #mobile_mailto {
+    display: block;
+    font-size: 38px;
+	line-height: 100%;
+    text-align: center;
+    width: 100%;
+}
+
+#mobile_mailto img {
+    height: 40px;
+    width: auto;
+}
+
+#mobile-footer a{
+	
+}
+
+#mobile-footer a:hover{
+	
+}
+
+#mobile-social {
+    margin-top: 20px;
+    text-align: center;
+}
+#mobile-footer img {
+    width: 64px;
+	height: auto;
+}
+
+#main {
+	clear: both;	
+}
+#donate-div {
+	position: initial;
+		
+}
+
+body #donate-div a {
+	margin: 0 auto;	
+	float: none;
+}
+
+#doc {
+	margin-top: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	width: initial;
+}
+
+#hd {	
+	padding: 0;
+}
+
+
+#hd h1 {
+	font-size: 4em;	
+	margin-top: 0;
+	padding-top: 50px;
+}
+
+#hd .description {
+	margin-top: 14px;	
+}
+
+.co-founders td,
+.staff td,
+.board-of-directors td,
+.listen td,
+.sponsors td {
+	clear: both;
+	display: block;	
+}
+
+.co-founders td img,
+.staff td img,
+.board-of-directors td img,
+.listen td img, 
+.sponsors td img{
+	width: 100%;
+	height: auto;
+	margin: 0;
+		
+}
+
+.co-founders td strong,
+.staff td strong,
+.board-of-directors td strong,
+.listen td strong {
+	padding-top: 20px;
+	text-align: center;	
+	display: block;
+    font-size: 18px;
+}
+
+.listen td {
+	padding-top: 20px;	
+	padding-left: 0px!important;
+}
+
+span.buynow  {
+	padding: 10px 0;
+	text-align: center;
+	width: 100%;
+	font-size: 20px;	
+}
+
+
+#quote-attribution {
+	display: block;
+	line-height: 1.2em;
+	padding-top: 10px;	
+}
+
+#contact-right,
+#contact-left {
+	float: none;
+	width: 100%;
+	text-align: center;
+}
+
+
+.musician-image {
+    height: auto;
+    text-align: center;
+    width: 100%;
+}

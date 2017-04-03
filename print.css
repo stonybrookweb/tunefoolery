@@ -1,0 +1,28 @@
+#search, 
+#subscribe,
+#date,
+#sidebar,
+#sharing,
+.navigation,
+#stockbox,
+body #access  {display: none; }
+
+#content {
+	border: none;
+	width: 100%;
+}
+#ft #lhfooter {background-color: #fff;}
+#ft p {color: black;}
+#ft a {color: black;}
+html, body {background: #fff;}
+#ft {border-top: 1px solid #ccc;}
+#hd {border-bottom: 1px solid #ccc;}
+#hd, #main, #ft, #footerlh, #credit {width: 100%;}
+.showmore {display: none;}
+
+#gatherposts a img {
+	opacity: 1;
+	border: 1px solid #000;
+}
+
+#doc {width: 728px;}

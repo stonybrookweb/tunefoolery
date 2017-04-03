@@ -1,0 +1,823 @@
+ls /*
+Theme Name: Tunefoolery 2.9.3
+Theme URI: http://bkjproductions.com/
+Description: Inhouse theme
+Version: 2.9.3
+Author: Stony Brook Web
+Author URI: Stony Brook Web
+Tags: basic
+Version History: See changelog.txt
+Add Marathon Banner
+*/
+
+
+
+/* always define basic colors: */
+.base_green {
+	color: #666600;
+}
+.darker_green {
+	color: #808000;
+}
+html {
+	background: white;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	line-height: 150%;
+	margin:0;
+	padding:0;
+}
+
+h1, h2, h3, h4, h5, h6, h7 {
+	font-weight: bold;
+	margin-bottom: .25em;
+	margin-top: .25em;
+	line-height: 130%;
+}
+
+#content h1 {
+	font-size: 24px;
+}
+#content h2 {
+	font-size: 18px;
+}
+#content h3 {
+	font-size: 16px;
+}
+#content h4 {
+	font-size: 14px;
+	font-style: italic;
+	font-weight: normal;
+}
+hr {
+	clear: both;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border: 0px;
+	border-bottom: 1px dotted gold;
+}
+
+b, strong {
+	font-weight: bold;
+}
+italic, em {
+	font-style: italic;
+}
+#doc {
+	width: 90%;
+	margin-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0px;
+	background: white;
+	position: relative;
+	clear: both;
+
+}
+#hd {
+	background: lightgray;
+	color: white;
+	padding: 10px 20px;
+	background-image: url('images/header_photo.jpg');
+	height: 200px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+#hd a {
+	color: white;
+	text-decoration: none;
+}
+#hd a:hover {
+	text-decoration: underline;
+}
+#hd h1 {
+	font-family: 'Marck Script', cursive, "Times New Roman", serif;
+	font-size: 5.0em;
+	text-align: center;
+	text-shadow: 1px 1px 2px rgba(0,0,0,0.25);
+	margin-bottom: 0px;
+	margin-top: 30px;
+}
+
+#hd .description {
+	font-size: 1.1em;
+	line-height: 110%;
+	font-weight: 400;
+	color: #fff;
+	margin: 0px;
+	text-align: center;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.25);
+}
+
+#hd h1 a {
+	color: #fff;
+}
+
+#hd h1 a:hover {
+	color: #13C4A5;
+	text-decoration: none;
+}
+
+
+#content {
+	float: left;
+	margin-left: 0;
+	width:70%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+a {
+	color: #1898c0;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #e76332;
+}
+
+#content.wide {
+	width: 950px;
+}
+
+
+#content p {
+	margin-bottom: 1em;
+}
+#content ol, #content ul, #content dl {
+	/*bringing lists on to the page with breathing room */
+	margin-left:2em;
+}
+#content ol li {
+	/*giving OL's LIs generated numbers*/
+	list-style: decimal outside;
+}
+#content ul li {
+	/*giving UL's LIs generated disc markers*/
+	list-style: disc outside;
+}
+#content dl dd {
+	/*providing spacing for definition terms*/
+	margin-left:1em;
+}
+#sidebar {
+	float: right;
+	width: 30%;
+	margin-top: 20px;
+	margin-bottom: 20px
+
+}
+
+#sidebar > div {
+	float: right;
+}
+
+
+#sidebar li li li {
+	margin-left: 10px;
+}
+
+#donate-sidebar {
+    margin-bottom: 10px;
+    margin-left: 51px;
+}
+
+
+#ft {
+	background: none repeat scroll 0% 0% black;
+	clear: both;
+	font-size: 14px;
+	padding: 10px 0px;
+	text-align: center;
+	color: white;
+}
+#ft a {
+	color: white;
+}
+#ft a:hover{
+	color: #15C0EC;
+}
+
+#ft img {
+	position: relative;
+	top: 3px;
+}
+
+#credit {
+	font-size: 10px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+#credit a {
+	color: lightgray;
+	text-decoration: none;
+}
+/* these relate to $content_width */
+.size-auto, .size-full, .size-large, .size-medium, .size-thumbnail {
+	/*max-width: 100%;
+	height: auto; */
+}
+.alignright {
+	float: right;
+	margin-left: 10px;
+}
+.alignleft {
+	float: left;
+	margin-right: 10px;
+}
+.alignnone {
+	margin: 5px 20px 20px 0;
+}
+.aligncenter {
+	display: block;
+	margin: 10px auto 10px auto;
+}
+.centered {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.quote {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	border-bottom: 1px dotted #1898c0;
+
+}
+
+.quote_content{
+	padding-top: 10px;
+	margin-bottom:20px;
+	font-family: comic sans ms,arial;
+	font-style: italic;
+	font-size: 20px;
+    line-height: 1.5em;
+	background-color: none;
+	color: #1898c0;
+	position: relative;
+}
+
+#quote-attribution{
+	color: black;
+	font-size:14px;
+	font-style:normal;
+	padding-left: 20px;
+}
+
+#quote-attribution::before {
+	content:'-';
+}
+
+p.vcard {
+	font-size: 10px;
+	text-align: left;
+}
+a.vcf {
+	background: url("images/icons/icon_vcard.gif") no-repeat scroll left center transparent;
+	color: white;
+	padding-left: 20px;
+	text-decoration: none;
+}
+.devnote {
+	bottom: 0px;
+	color: gray;
+	display: block;
+	float: left;
+	font-size: 9px;
+	position: absolute;
+}
+
+
+.pagination {
+	height: 30px;
+	margin-bottom: 20px;
+	width: 100%;
+}
+.pagination .alignleft a {
+	background: url("images/icons/btn_paginate_prev.png") no-repeat scroll 0% 0% transparent;
+	color: darkgray;
+	font-size: 13px;
+	font-weight: bold;
+	padding: 2px 5px 5px 25px;
+	text-decoration: none;
+}
+.pagination .alignright a {
+	background: url("images/icons/btn_paginate_next.png") no-repeat scroll right top transparent;
+	color: darkgray;
+	font-size: 13px;
+	font-weight: bold;
+	padding: 2px 25px 5px 5px;
+	text-decoration: none;
+}
+.pagination a:hover {
+	opacity: .9;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+	filter: alpha(opacity=90);
+}
+/* this can vary depending on your thumbnail size and configuration of your [gallery] shortcode */
+
+
+.gallery-icon a {
+	padding: 0px;
+	margin: 0px;
+}
+#content #gallery-1 dl {
+	padding: 0px;
+	margin: 0px;
+	width: 150px;
+	overflow: hidden;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+#gallery-1 dt img {
+	border:  1px solid white;
+}
+#gallery-1 a:hover img {
+	opacity: .8;
+	border: 1px solid black;
+}
+#gatherposts img {
+	float: left;
+	margin-right: 10px;
+}
+#gatherposts li {
+	clear: both;
+	margin-bottom: 10px;
+}
+/* styling for subpage navigation */
+#subpage-nav a {
+	text-decoration: none;
+	color: #808000;
+}
+#subpage-nav .current_page_item {
+	color: #acac59;
+}
+#subpage-nav .current_page_item a {
+	color: #666600;
+}
+#subpage-nav li {
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 110%;
+	list-style: square;
+	color: #666600;
+	margin-left: 15px;
+	margin-bottom: .5em;
+	padding: 0px;
+}
+#subpage-nav li ul {
+	margin-top: 2px;
+}
+#subpage-nav li li {
+	font-size: 13px;
+}
+/* if you happen to be using an accordion */
+#accordion h3 {
+	background: url("images/icons/sprite_triangles.png") no-repeat 0px -48px;
+	cursor: pointer;
+	margin-top: 10px;
+	padding-left: 18px;
+	margin-bottom: .25em;
+}
+#accordion h3.active {
+	background: url("images/icons/sprite_triangles.png") no-repeat 0 0;
+	cursor: pointer;
+}
+#accordion div {
+	margin-left: 18px;
+}
+#addthis_area {
+	float: right;
+	margin-right: 15px;
+}
+.searchresults p.postmetadata {
+	margin: 0px;
+}
+.searchresults small {
+	margin: 0px;
+}
+.searchresults h2 {
+	margin-top: 1em;
+	margin-bottom: 0px;
+	padding-top: 10px;
+}
+.searchresults .post {
+	margin-bottom: 10px;
+	border-bottom: 1px dotted #ccc;
+}
+/* style the search form */
+#s {
+	height: 25px;
+}
+#searchsubmit {
+	background-color: #666600;
+	width: 25px;
+	height: 27px;
+	color: #fff;
+	font-weight: bold
+}
+/* hide things if you need to, for example labels on icons */
+.hide {
+	position: absolute !important;
+	top: -9999px !important;
+	left: -9999px !important;
+}
+
+/* gallery page */
+.gallery .hentry {
+    margin-left: 20px;
+}
+
+
+
+
+
+/* Copied from other theme move above once confirmed correct */
+
+
+
+/*Style musician categories */
+#musician-categories{
+	margin-top: 40px;
+	margin-left:20px;
+	margin-bottom: 40px;
+
+
+}
+
+#musician-categories ul{
+	margin: 0;
+	padding: 0;
+	text-align:center;
+}
+
+#musician-categories ul li{
+	display: inline-block;
+    min-height: 50px;
+}
+
+#musician-categories ul li a {
+	background-color: #e76332;
+    color: white;
+    margin-left: 5px;
+	margin-right: 5px;
+    padding: 10px;
+    text-decoration: none;
+	border-radius: 10px;
+	-webkit-box-shadow: 5px 5px 3px 0px rgba(211,211,211,1);
+	-moz-box-shadow: 5px 5px 3px 0px rgba(211,211,211,1);
+	box-shadow: 5px 5px 3px 0px rgba(211,211,211,1);
+}
+
+#musician-categories ul li a:hover{
+	color: black;
+	background-color: #15c0ec;
+}
+
+#musician-categories{
+	/*display:table-cell;	*/
+}
+
+
+
+
+/*Musicians lists */
+
+.musicians .post-content h1 {
+    font-size: 24px;
+    margin-left: 15px;
+    margin-top: 50px;
+}
+
+.musicians .post-content > p {
+    font-size: 15px;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+
+
+.all_musicians {
+	float:left;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	min-height: 260px;
+	width:33%;
+}
+
+.all_musicians img{
+	border-radius: 9999px;
+}
+
+.musician-image{
+	width: 33%;
+	margin: 0 auto;
+	min-width: 50px;
+}
+
+.musician-text{
+	clear:both;
+	min-width: 150px;
+}
+
+.musician-text h4 {
+	text-align:center;
+}
+
+.musician-text p{
+	text-align:center;
+	display: none;
+}
+
+.musician-image a:hover{
+	opacity: .5;
+}
+
+.musician-image img:hover{
+	opacity: .5;
+}
+
+
+/* Single musician page */
+
+.listen #sidebar .sidebar {
+    width: 62%;
+}
+
+.single-musicians #sidebar .sidebar {
+    width: 62%;
+}
+
+.single-musicians .post-content img{
+	float: left;
+	margin-right: 30px;
+	border-radius: 5px;
+
+}
+
+.single-musicians #content h2{ font-size: 2.25em; }
+
+
+
+
+
+
+/* QUOTE STYLING */
+
+
+
+
+
+
+
+
+
+.hentry{
+	clear: both;
+}
+
+
+
+
+
+
+
+
+
+/* mailchimp */
+
+#mc_embed_signup {
+	border-bottom: 1px dotted #1898c0;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+}
+#mc_embed_signup input.email {
+    margin: 5px 0;
+    padding-top: 4px;
+	padding-left: 4px;
+	padding-bottom: 4px;
+	padding-right: 4px;
+}
+
+
+.current-news {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    text-indent: 10px;
+    max-width: 300px;
+	text-align: center;
+	border-bottom: 1px dotted #1898c0;
+	display: inline-block;
+}
+
+.current-news img {
+	float: none!important;
+}
+
+.current-news h1{
+	color: red;
+	font-size: 150%;
+}
+
+.current-news p {
+    margin-bottom: 10px;
+}
+
+.devnote {
+	display: none;
+}
+
+
+.home .wp-caption{
+	width: 100%!important;
+	height: auto;
+}
+.home-image-hero{
+	width:100%;
+	height: auto;
+}
+
+
+tr {
+	vertical-align: top;
+}
+
+td {
+	padding-bottom: 40px;
+}
+
+.volunteer td {
+	padding-bottom: 20px;
+}
+
+#contact-right{
+	float:left;
+	width:40%;
+}
+#contact-left{
+	float:left;
+	width: 40%;
+	margin-right: 40px;
+}
+
+.cdbaby-player {
+	min-height: 240px;
+
+}
+
+span.buynow {
+    background-color: green;
+    border-radius: 20px;
+    color: white;
+    display: inline-block;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+span.buynow a {
+	color: white;
+}
+
+span.buynow a:hover {
+	padding: 40px;
+}
+
+ #donate-div {
+	z-index: 1;
+	position: absolute;
+	top: -38px;
+	right: 60px;
+ }
+
+ body #donate-div a {
+	float: right;
+	padding: 0;
+	margin: 0;
+ }
+
+#mobile-menu{
+	display: none;
+ }
+
+#mobile-footer {
+	display: none;
+ }
+
+ #musician-categories ul li a.active-category {
+    background-color: #15c0ec;
+	color: black;
+}
+
+.gallery #content {
+	width: 100%;
+}
+
+.gallery #sidebar {
+	display: none;
+}
+
+body.gallery br {
+	display: none;
+}
+
+body.gallery .gallery-item {
+	min-height: 175px;
+	width: auto!important;
+}
+
+@media only screen and (min-width:1150px){
+	#donate-div {
+		top: -90px;
+	}
+
+	.musicians #donate-div {
+		top: -99px;
+	}
+}
+
+
+@media only screen and (max-width:1100px){
+	/* 	#inner-access .menu-header */
+	#content {
+			 max-width: 600px;
+			 width: 60%;
+	}
+
+	.single-musicians #content h2{
+		font-size: 1.5em;
+	}
+	.gallery #content {
+			max-width: initial;
+	}
+
+	#sidebar{
+			max-width: 300px;
+	}
+}
+
+
+@media only screen and (max-width:875px){
+	/* 	#inner-access .menu-header */
+	#content {
+			/*  max-width: 600px; */
+			 width: 50%;
+	}
+
+}
+
+
+@media only screen and (max-width:768px){
+	/* 	#inner-access .menu-header */
+	#content {
+			width: 100%;
+			max-width:none;
+	}
+
+	.current-news {
+		max-width: none;
+	}
+
+	#google_calendar{
+		text-align: center;
+	}
+
+	#sidebar{
+			clear: both;
+			width: 100%;
+			max-width:none;
+			float: none;
+	}
+	#sidebar > div {
+		float: none;
+	}
+
+	#donate-div {
+		right: 0px;
+	}
+	.musician-image {
+		width: 50%;
+	}
+	.all_musicians {
+		width: 50%;
+	}
+
+	#musician-categories {
+	margin-left: 0;
+	}
+
+	#musician-categories ul li a {
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-left: 3px;
+	margin-right: 3px;
+	}
+
+	.single-musicians #sidebar .sidebar {
+		width: 45%;
+	}
+}
+
